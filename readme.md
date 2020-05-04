@@ -4,7 +4,7 @@
 
 ## Introducción ##
 
-Convertirás tu "pesé" en una electro-varita sembradora del caos en una página.
+Convertirás tu "pesé" en una electro-varita sembradora del caos en una página que te proveemos dentro del repositorio.
 
 ![](jarri.webp)
 
@@ -21,6 +21,12 @@ Mientras mueves el ratón y haces click sobre las cosas, irá haciendo cambios a
 - DOM API
 
 ## Iteraciones ##
+
+En este repositorio tienes descargada y "aligerada" un post del conocido blog ["Coding Horror"](https://blog.codinghorror.com).
+
+Todo está preparado para que puedas escribir en el archivo `scripts.js`
+
+**_Todo ha de hacerse mediante Javascript._**
 
 ### Eventos ###
 
