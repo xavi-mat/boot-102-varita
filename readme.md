@@ -40,13 +40,13 @@ Todo está preparado para que puedas escribir en el archivo `scripts.js`
 
     2.3 [x] Bloques de `article` o `section`: Cambia el color de fondo.
 
-3. [ ] Cuando el cursor esté sobre alguno de los siguientes elementos, seguir las instrucciones siguientes, y devolver dicho elemento a su estado original cuando salga el cursor.
+3. [x] Cuando el cursor esté sobre alguno de los siguientes elementos, seguir las instrucciones siguientes, y devolver dicho elemento a su estado original cuando salga el cursor.
 
     3.1 [x] Imágenes: Cambia la imagen por el gif `abracadabra.gif`.
 
     3.2 [x] Párrafos: Cambia el color del texto y el de fondo por uno cualquiera.
 
-    3.3 [ ] Bloques de `article` o `section`: Color de fondo distinto al de párrafo.
+    3.3 [x] Bloques de `article` o `section`: Color de fondo distinto al de párrafo.
 
 _**Premium**_
 
