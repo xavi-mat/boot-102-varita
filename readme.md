@@ -30,7 +30,7 @@ Todo está preparado para que puedas escribir en el archivo `scripts.js`
 
 ### Eventos ###
 
-1. [ ] Evita el comportamiento por defecto al hacer click. Por ejemplo, si hago click sobre un enlace, este no me llevará a otra página.
+1. [x] Evita el comportamiento por defecto al hacer click. Por ejemplo, si hago click sobre un enlace, este no me llevará a otra página.
 
 2. [ ] Al hacer click sobre un elemento van a ocurrir varias cosas. Todo depende del tipo de elemento:
 
