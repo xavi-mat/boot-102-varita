@@ -174,3 +174,17 @@ sects.forEach(node => {
     node.addEventListener('mouseenter', artCharmIn);
     node.addEventListener('mouseleave', artCharmOut);
 });
+
+
+// TASK 4. Create randomizer
+const colors = ['red', 'blue', 'green']
+
+const getRandom = (array) => {
+    return array[randomInt(array.length-1)];
+}
+
+const getRandom2 = (array) => array[Math.floor(Math.random()*array.length)];
+
+console.log(getRandom(colors))
+// imprime 'red', 'blue' o 'green'
+
