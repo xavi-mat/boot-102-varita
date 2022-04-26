@@ -42,7 +42,7 @@ Todo está preparado para que puedas escribir en el archivo `scripts.js`
 
 3. [ ] Cuando el cursor esté sobre alguno de los siguientes elementos, seguir las instrucciones siguientes, y devolver dicho elemento a su estado original cuando salga el cursor.
 
-    3.1 [ ] Imágenes: Cambia la imagen por el gif `abracadabra.gif`.
+    3.1 [x] Imágenes: Cambia la imagen por el gif `abracadabra.gif`.
 
     3.2 [ ] Párrafos: Cambia el color del texto y el de fondo por uno cualquiera.
 
