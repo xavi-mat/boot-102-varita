@@ -176,7 +176,7 @@ sects.forEach(node => {
 });
 
 
-// TASK 4. Create randomizer
+// TASK 4. Create randomizer ///////////////////////////////////////////////////
 const colors = ['red', 'blue', 'green']
 
 const getRandom = (array) => {
@@ -187,4 +187,11 @@ const getRandom2 = (array) => array[Math.floor(Math.random()*array.length)];
 
 console.log(getRandom(colors))
 // imprime 'red', 'blue' o 'green'
+
+
+// TASK 5. Random from color palette
+const palette = ["#8ECAE6", "#219EBC", "#023047", "#FFB703", "#FB8500"];
+
+const getRandomColors = () => getRandom(palette);
+// I've already used another randomizer function for the colors.
 
