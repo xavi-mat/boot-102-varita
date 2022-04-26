@@ -10,7 +10,7 @@ const randomInt = (num) => Math.floor(Math.random() * num) + 1;
 // Callback for clicks on images
 const imageSpell = (e) => {
     const num = randomInt(6);
-    e.target.src = `/assets/magic-${num}.gif`;
+    e.currentTarget.src = `/assets/magic-${num}.gif`;
 };
 // Get the node list of images
 const imgs = document.querySelectorAll('img');
@@ -27,8 +27,8 @@ const randomColor = () =>
     randomInt(255).toString(16);
 // Callback for clicks on paragraphs
 const paragraphSpell = (e) => {
-    e.target.style.color = randomColor();
-    e.target.style.backgroundColor = randomColor();
+    e.currentTarget.style.color = randomColor();
+    e.currentTarget.style.backgroundColor = randomColor();
 };
 // Get node list of paragraphs
 const pars = document.querySelectorAll('p');
@@ -36,5 +36,17 @@ const pars = document.querySelectorAll('p');
 pars.forEach(node=>{
     node.addEventListener('click', paragraphSpell);
 });
+
+// TASK 2.3. Change background color on `section` and `article` nodes
+// Callback for clicks on sections and articles
+const sectionSpell = (e) => {
+    e.currentTarget.style.backgroundColor = randomColor();
+};
+// Get node lists of articles and sections
+const arts = document.querySelectorAll('article');
+const sects = document.querySelectorAll('section');
+// Add a listener to every article and section
+arts.forEach(node=>{node.addEventListener('click', sectionSpell)});
+sects.forEach(node=>{node.addEventListener('click', sectionSpell)});
 
 
