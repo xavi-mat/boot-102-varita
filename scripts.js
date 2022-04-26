@@ -27,9 +27,18 @@ document.body.addEventListener('click', (e) => e.preventDefault());
 
 // Callback for clicks on images
 const imageSpell = (e) => {
-    const num = randomInt(6);
+
     const img = e.currentTarget;
-    img.src = `/assets/magic-${num}.gif`;
+
+    // OLD CODE:
+    // I was using this code before the functions of exercises 4, 5, and 6
+    // const num = randomInt(6);
+    // img.src = `/assets/magic-${num}.gif`;
+
+    // NEW CODE:
+    // Now I use this code:
+    img.src = getMagicImage();
+
     // Save image in data- attribute
     img.dataset.oldImage = img.src;
 };
@@ -69,7 +78,8 @@ const sectionSpell = (e) => {
     const elem = e.currentTarget;
 
     // Change bg color
-    elem.style.backgroundColor = randomColor();
+    // OLD VERSION: elem.style.backgroundColor = randomColor();
+    elem.style.backgroundColor = getRandomColors();
 
     // Save color
     elem.dataset.oldBgColor = elem.style.backgroundColor;
@@ -125,8 +135,10 @@ const parCharmIn = (e) => {
     par.dataset.oldBgColor = par.style.backgroundColor;
 
     // Change to ephemeral colors
-    par.style.color = randomColor();
-    par.style.backgroundColor = randomColor();
+    // OLD VERSION: par.style.color = randomColor();
+    // OLD VERSION: par.style.backgroundColor = randomColor();
+    par.style.color = getRandomColors();
+    par.style.backgroundColor = getRandomColors();
 };
 
 const parCharmOut = (e) => {
@@ -154,7 +166,8 @@ const artCharmIn = (e) => {
     elem.dataset.oldBgColor = elem.style.backgroundColor;
 
     // Change to ephemeral bg color
-    elem.style.backgroundColor = randomColor();
+    // OLD VERSION: elem.style.backgroundColor = randomColor();
+    elem.style.backgroundColor = getRandomColors();
 };
 
 const artCharmOut = (e) => {
@@ -189,9 +202,14 @@ console.log(getRandom(colors))
 // imprime 'red', 'blue' o 'green'
 
 
-// TASK 5. Random from color palette
+// TASK 5. Random from color palette ///////////////////////////////////////////
 const palette = ["#8ECAE6", "#219EBC", "#023047", "#FFB703", "#FB8500"];
 
 const getRandomColors = () => getRandom(palette);
-// I've already used another randomizer function for the colors.
 
+
+// TASK 6. Random magic image //////////////////////////////////////////////////
+const magicImages = ["magic-1.gif", "magic-2.gif", "magic-3.gif", "magic-4.gif",
+    "magic-5.gif", "magic-6.gif"];
+
+const getMagicImage = () => '/assets/' + getRandom(magicImages);
