@@ -44,7 +44,7 @@ Todo está preparado para que puedas escribir en el archivo `scripts.js`
 
     3.1 [x] Imágenes: Cambia la imagen por el gif `abracadabra.gif`.
 
-    3.2 [ ] Párrafos: Cambia el color del texto y el de fondo por uno cualquiera.
+    3.2 [x] Párrafos: Cambia el color del texto y el de fondo por uno cualquiera.
 
     3.3 [ ] Bloques de `article` o `section`: Color de fondo distinto al de párrafo.
 

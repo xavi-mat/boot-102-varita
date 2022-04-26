@@ -54,16 +54,17 @@ sects.forEach(node=>{node.addEventListener('click', sectionSpell)});
 // TASK 3.1 Images: change to abracadabra.gif
 // Callback on mouseenter
 const imageCharmIn = (e) => {
-    const target = e.currentTarget;
+    const img = e.currentTarget;
     // Save old image in data- attribute
-    target.dataset.olderImage = target.src;
+    img.dataset.olderImage = img.src;
     // Change to new image
-    target.src = '/assets/abracadabra.gif';
+    img.src = '/assets/abracadabra.gif';
 };
+// Callback on mouseleave
 const imageCharmOut = (e) => {
-    const target = e.currentTarget;
+    const img = e.currentTarget;
     // Change to older image
-    target.src = target.dataset.olderImage;
+    img.src = img.dataset.olderImage;
 };
 // Add two listeners to every image
 imgs.forEach(node=>{
@@ -71,6 +72,24 @@ imgs.forEach(node=>{
     node.addEventListener('mouseleave', imageCharmOut);
 });
 
-// TASK 3.2 Párrafos: Cambia el color del texto y el de fondo por uno cualquiera.
-
+// TASK 3.2 Paragraphs: Change text and background colors
+// Calbacks on mouseenter & mouseleave
+const parCharmIn = (e) => {
+    const par = e.currentTarget;
+    // Save old colors
+    par.dataset.olderColor = par.style.color;
+    par.dataset.olderBgColor = par.style.backgroundColor;
+    paragraphSpell(e);
+};
+const parCharmOut = (e) => {
+    const par = e.currentTarget;
+    // Save old colors
+    par.style.color = par.dataset.olderColor;
+    par.style.backgroundColor = par.dataset.olderBgColor;
+};
+// Add listeners to every paragraph
+pars.forEach(node=>{
+    node.addEventListener('mouseenter', parCharmIn);
+    node.addEventListener('mouseleave', parCharmOut);
+});
 // TASK 3.3 Bloques de article o section: Color de fondo distinto al de párrafo.
