@@ -19,7 +19,7 @@ const randomColor = () =>
 // TASKS
 
 // TASK 1. Prevent all clicks //////////////////////////////////////////////////
-document.body.addEventListener('click', (e) => e.preventDefault());
+document.body.addEventListener('click', (e) => {e.preventDefault();});
 
 // TASKS 2. On click ///////////////////////////////////////////////////////////
 
